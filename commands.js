@@ -52,6 +52,9 @@ exports.commands = function commands(msg, members, mapUser) {
 	if (msg.content.indexOf(':ersil:') > -1) {
 		msg.channel.send(ersil.ersil());
 	}
+	if (msg.content.indexOf(':pororing:') > -1) {
+		msg.channel.send('42');
+	}
 	if (msg.content === '!v github') {
 		msg.channel.send(github.github());
 	}
