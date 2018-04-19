@@ -1,6 +1,7 @@
 const index = require("./command/index");
 const wiki = require("./command/wiki");
 const dl = require("./command/download");
+const classe = require("./command/classe");
 const emojis = require("./command/emojis");
 const evolve = require("./command/evolve");
 const alls = require("./command/all");
@@ -9,7 +10,6 @@ const imag = require("./command/images");
 const github = require("./command/github");
 const ersil = require("./command/ersil");
 
-classe = require("./command/classe");
 
 exports.commands = function commands(msg, members, mapUser) {
 	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content === '!v') {
