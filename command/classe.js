@@ -5,9 +5,9 @@ exports.classe = function classe(param, roles) {
 		if(element === 'my') {
 			roles.forEach(function(role) {
 				//s+= getInfo(role);
-				s+= role;
+				s+= role +' ';
 			});
-			s = s.replace('@'/g, '');
+			s = s.replace(/@/g, '');
 			s = s.toLowerCase();
 		}
 		else if(element === 'all') {
