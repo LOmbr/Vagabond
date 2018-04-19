@@ -10,7 +10,7 @@ const members = client.users;
 const prefixe = '!v';
 
 client.on('ready', () => {
-	console.log(`Logged in as ${client.user.tag}!`);
+	//console.log(`Logged in as ${client.user.tag}!`);
 	client.user.setActivity('!v || !v help || !v commands');	
 	init.gen(client, members, mapUser);	
 });
