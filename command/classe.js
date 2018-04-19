@@ -1,5 +1,5 @@
 
-exports.classe = class Classe {
+class Classe {
 	constructor() {}
 	
 	classe(param, roles) {
@@ -38,3 +38,5 @@ exports.classe = class Classe {
 		//}
 	}
 }
+
+module.exports = Classe;

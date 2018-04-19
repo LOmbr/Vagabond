@@ -9,8 +9,8 @@ const imag = require("./command/images");
 const github = require("./command/github");
 const ersil = require("./command/ersil");
 
-const classe = require("./command/Classe");
-clas = new classe.classe();
+classe = require("./command/Classe");
+classe = new classe.Classe();
 
 exports.commands = function commands(msg, members, mapUser) {
 	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content === '!v') {
@@ -31,7 +31,7 @@ exports.commands = function commands(msg, members, mapUser) {
 	if (msg.content.startsWith('!v classe') && msg.content !== '!v classes') {
 		modif = msg.content.replace('!v classe', '');
 		args = modif.split(' ').slice(1);
-		msg.channel.send(clas.clas(args, msg.member.roles));
+		msg.channel.send(classe.classe(args, msg.member.roles));
 	}
 	if (msg.content === '!v emojis') {
 		msg.channel.send(emojis.emojis(msg));
