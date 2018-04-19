@@ -11,7 +11,7 @@ const github = require("./command/github");
 const ersil = require("./command/ersil");
 
 
-exports.commands = function commands(msg, members, mapUser, crabe) {
+exports.commands = function commands(msg, members, mapUser) {
 	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content === '!v') {
 		s = 'Listes des commandes :\n'
 		s += index.index();
@@ -50,9 +50,7 @@ exports.commands = function commands(msg, members, mapUser, crabe) {
 		msg.channel.send("", {file: imag.imag()});
 	}
 	if (msg.content.indexOf(':ersil:') > -1) {
-		crabe = ersil.ersil(crabe);
-		msg.channel.send("->"+crabe);
-		return crabe;
+		msg.channel.send('40');
 	}
 	if (msg.content === '!v github') {
 		msg.channel.send(github.github());

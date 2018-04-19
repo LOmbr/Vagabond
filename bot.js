@@ -8,7 +8,6 @@ const mapUser = new Map();
 const members = client.users;
 
 const prefixe = '!v';
-var crabe;
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
@@ -20,7 +19,7 @@ client.on('ready', () => {
 client.on('message', msg => {
 	
 	if(msg.content.startsWith(prefixe) ||msg.content.indexOf(':ersil:') > -1) {
-		commands.commands(msg, members, mapUser, crabe);
+		commands.commands(msg, members, mapUser);
 	}
 });
 
