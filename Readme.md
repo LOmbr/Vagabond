@@ -4,6 +4,16 @@ Bot discord pour joueur de Dragonica.
 
 ## Commandes
 
+Le préfixe pour utiliser Vagabond est
+```
+!v
+```
+
+- help
+```
+affichage de la liste des commandes
+```
+
 - classe param1 [param2 ...]
 ```
 affichage de l'arbre d'évolution des classes placées en paramètres. Mettre all pour les classes de bases.
