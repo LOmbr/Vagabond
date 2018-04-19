@@ -11,7 +11,7 @@ Le préfixe pour utiliser Vagabond est
 
 - help
 ```
-affichage de la liste des commandes
+affichage de la liste des commandes.
 ```
 
 - classe [[guerrier] [magicien] [archer] [voleur] [chaman] [amazon]]
@@ -46,10 +46,24 @@ affiche une image présente dans le dossier image.
 
 - say
 ```
-génère une réplique d'un personnage de Dragonica
+génère une réplique d'un personnage de Dragonica.
 ```
 
 - wiki
 ```
 lien vers la page Dragonica Wiki (FR).
+```
+
+## Emojis
+
+Si votre serveur dispose des emojis :pororing:, :ersil:, :pv: et :pm:
+
+- :pororing:
+```
+affichage de la liste des commandes.
+```
+
+- :ersil:, :pv: et :pm:
+```
+Vagabond comptera le nombre d'utilisation de cet emoji. A vingt, il vous offrira un :pv: ou :pm:.
 ```
