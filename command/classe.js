@@ -7,6 +7,7 @@ exports.classe = function classe(param, roles) {
 				//s+= getInfo(role);
 				s+= role;
 			});
+			s.toLowerCase()
 		}
 		else if(element === 'all') {
 			s += guerrierE + 'Guerrier \n' + magicienE + 'Magicien \n' + voleurE + 'Voleur \n' + archerE + 'Archer \n' + chamanE + 'Chaman \n' + amazoneE +'Amazone';
