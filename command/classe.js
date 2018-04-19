@@ -1,5 +1,5 @@
 
-exports.Classe = class Classe {
+exports.classe = class Classe {
 	constructor() {}
 	
 	classe(param, roles) {
@@ -35,7 +35,6 @@ exports.Classe = class Classe {
 			});
 			
 			return s
-			//msg.channel.send(s)
 		//}
 	}
 }
