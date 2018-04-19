@@ -15,10 +15,6 @@ exports.commands = function commands(msg, members, mapUser) {
 	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content.indexOf(':pororing:') > -1 || msg.content === '!v') {
 		s = 'Listes des commandes :\n'
 		s += index.index();
-		
-		s += '\nProchainement : \n';
-		s += 'dragonica : pour ping les joueurs de dragonica\n';
-		s += 'tree classe : pour proposer un arbre de sort pour la classe';
 		msg.channel.send(s);
 	}
 	if (msg.content === '!v download') {

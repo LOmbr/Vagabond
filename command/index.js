@@ -19,7 +19,7 @@ exports.index = function index() {
 		}
 	}
 	
-	s += '[hébergeur: Heroku]'
+	s += '\n[hébergeur: Heroku]\n'
 	return s;
 }
 
