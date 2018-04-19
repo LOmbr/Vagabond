@@ -2,7 +2,7 @@ exports.classe = function classe(param, roles) {
 		
 	let s = '';
 	args.forEach(function(element) {
-		if(element === 'my') {
+		/*if(element === 'my') {
 			roles.forEach(function(role) {
 				//s+= getInfo(role);
 				s+= role +' ';
@@ -10,7 +10,8 @@ exports.classe = function classe(param, roles) {
 			s = s.replace(/@/g, '');
 			s = s.toLowerCase();
 		}
-		else if(element === 'all') {
+		else */
+		if(element === 'all') {
 			s += guerrierE + 'Guerrier \n' + magicienE + 'Magicien \n' + voleurE + 'Voleur \n' + archerE + 'Archer \n' + chamanE + 'Chaman \n' + amazoneE +'Amazone';
 		}
 		else {
