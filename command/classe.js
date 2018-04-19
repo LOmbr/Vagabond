@@ -7,7 +7,7 @@ exports.classe = function classe(param, roles) {
 				//s+= getInfo(role);
 				s+= role;
 			});
-			s = s.replace('@', '');
+			s = s.replace('@'/g, '');
 			s = s.toLowerCase();
 		}
 		else if(element === 'all') {
