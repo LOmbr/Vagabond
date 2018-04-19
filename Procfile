@@ -1,1 +1,1 @@
-worker: node bot.js vagabond
+worker: node bot.js
