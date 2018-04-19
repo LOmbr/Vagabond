@@ -50,7 +50,8 @@ exports.commands = function commands(msg, members, mapUser) {
 		msg.channel.send("", {file: imag.imag()});
 	}
 	if (msg.content.indexOf(':ersil:') > -1) {
-		msg.channel.send('40');
+		process.env.TOKEN++;
+		msg.channel.send('>>'+process.env.TOKEN);
 	}
 	if (msg.content === '!v github') {
 		msg.channel.send(github.github());
