@@ -5,11 +5,11 @@ exports.ersil = function ersil(crabe) {
 	s = '';
 	if(crab >= 20) {
 		crab = 0;
-		s += pvE
+		s += pvE;
 	}
 	else {
 		let necessaire = 20;
-		necessaire = necessaire-crab
+		necessaire = necessaire-crab;
 		s += necessaire + ' manquant';
 	}
 	
