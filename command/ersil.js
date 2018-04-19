@@ -5,7 +5,14 @@ exports.ersil = function ersil(crabe) {
 	s = '';
 	if(crab >= 20) {
 		crab = 0;
-		s += pvE;
+		
+		if(getRandomInt(2) == 0) {
+			s += pvE;
+		}
+		else {
+			s += pmE;
+		}
+		
 	}
 	else {
 		let necessaire = 20;
@@ -16,4 +23,8 @@ exports.ersil = function ersil(crabe) {
 	process.env.CRABE = crab;
 	
 	return s;
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
 }

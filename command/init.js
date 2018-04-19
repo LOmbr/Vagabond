@@ -64,6 +64,7 @@ function genClasses(client) {
 	
 	//potion
 	pv = client.emojis.find("name", "pv");
+	pm = client.emojis.find("name", "pm");
 }
 
 function genEmojis(client) {
@@ -117,6 +118,7 @@ function genEmojis(client) {
 	
 	//potion
 	pvE = '<:pv:'+pv.id+'>';
+	pmE = '<:pm:'+pm.id+'>';
 }
 
 function genClasse(client) {
