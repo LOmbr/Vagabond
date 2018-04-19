@@ -12,7 +12,7 @@ const ersil = require("./command/ersil");
 
 
 exports.commands = function commands(msg, members, mapUser) {
-	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content === ':pororing' || msg.content === '!v') {
+	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content.startsWith(':pororing:') || msg.content === '!v') {
 		s = 'Listes des commandes :\n'
 		s += index.index();
 		
