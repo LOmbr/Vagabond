@@ -11,7 +11,7 @@ const github = require("./command/github");
 const ersil = require("./command/ersil");
 
 
-exports.commands = function commands(msg, members, mapUser) {
+exports.commands = function commands(msg, members, mapUser, crabe) {
 	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content === '!v') {
 		s = 'Listes des commandes :\n'
 		s += index.index();
