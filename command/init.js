@@ -61,6 +61,9 @@ function genClasses(client) {
 	valkyrie = client.emojis.find("name", "valkyrie");
 	mirage = client.emojis.find("name", "mirage");
 	furie = client.emojis.find("name", "furie");
+	
+	//potion
+	pv = client.emojis.find("name", "pv");
 }
 
 function genEmojis(client) {
@@ -112,7 +115,8 @@ function genEmojis(client) {
 	mirageE = '<:mirage:'+mirage.id+'>';
 	furieE = '<:furie:'+furie.id+'>';
 	
-	
+	//potion
+	pvE = '<:pv:'+pv.id+'>';
 }
 
 function genClasse(client) {

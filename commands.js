@@ -50,10 +50,7 @@ exports.commands = function commands(msg, members, mapUser) {
 		msg.channel.send("", {file: imag.imag()});
 	}
 	if (msg.content.indexOf(':ersil:') > -1) {
-		let crab = parseInt(process.env.CRABE, 10);
-		crab++;
-		process.env.CRABE = crab;
-		msg.channel.send(process.env.CRABE + '>>>' + crab);
+		msg.channel.send(ersil.ersil());
 	}
 	if (msg.content === '!v github') {
 		msg.channel.send(github.github());
