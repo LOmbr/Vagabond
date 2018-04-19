@@ -12,7 +12,7 @@ const ersil = require("./command/ersil");
 
 
 exports.commands = function commands(msg, members, mapUser) {
-	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content.indexOf(':ersil:') > -1 || msg.content === '!v') {
+	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content.indexOf(':pororing:') > -1 || msg.content === '!v') {
 		s = 'Listes des commandes :\n'
 		s += index.index();
 		
@@ -51,9 +51,6 @@ exports.commands = function commands(msg, members, mapUser) {
 	}
 	if (msg.content.indexOf(':ersil:') > -1) {
 		msg.channel.send(ersil.ersil());
-	}
-	if (msg.content.indexOf(':pororing:') > -1) {
-		msg.channel.send('42');
 	}
 	if (msg.content === '!v github') {
 		msg.channel.send(github.github());
