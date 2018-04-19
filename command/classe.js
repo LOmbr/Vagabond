@@ -6,8 +6,6 @@ exports.classe = function classe(param, roles) {
 			roles.forEach(function(role) {
 				s+= getInfo(role);
 			});
-			
-			
 		}
 		else if(element === 'all') {
 			s += guerrierE + 'Guerrier \n' + magicienE + 'Magicien \n' + voleurE + 'Voleur \n' + archerE + 'Archer \n' + chamanE + 'Chaman \n' + amazoneE +'Amazone';
@@ -22,17 +20,17 @@ exports.classe = function classe(param, roles) {
 
 function getInfo(name) {
 	let s = '';
-	if(element === 'guerrier')
+	if(name === 'guerrier')
 		s += guerrierA;
-	if(element === 'magicien')
+	if(name === 'magicien')
 		s += magicienA;
-	if(element === 'archer')
+	if(name === 'archer')
 		s += archerA;
-	if(element === 'voleur')
+	if(name === 'voleur')
 		s += voleurA;
-	if(element === 'chaman')
+	if(name === 'chaman')
 		s += chamanA;
-	if(element === 'amazone')
+	if(name === 'amazone')
 		s += amazoneA;
 	return s;
 }
