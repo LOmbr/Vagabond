@@ -14,9 +14,14 @@ Le préfixe pour utiliser Vagabond est
 affichage de la liste des commandes
 ```
 
-- classe param1 [param2 ...]
+- classe [[guerrier] [magicien] [archer] [voleur] [chaman] [amazon]]
 ```
-affichage de l'arbre d'évolution des classes placées en paramètres. Mettre all pour les classes de bases.
+affichage de l'arbre d'évolution des classes placées en paramètres.
+```
+
+- classe all
+```
+affichage des classes de base.
 ```
 
 - download
