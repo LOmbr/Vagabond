@@ -4,7 +4,8 @@ exports.classe = function classe(param, roles) {
 	args.forEach(function(element) {
 		if(element === 'my') {
 			roles.forEach(function(role) {
-				s+= getInfo(role);
+				//s+= getInfo(role);
+				s+= role;
 			});
 		}
 		else if(element === 'all') {
