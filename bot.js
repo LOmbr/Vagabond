@@ -18,7 +18,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
 	
-	if(msg.content.startsWith(prefixe) || msg.content.startsWith(':poroing:') || msg.content.indexOf(':ersil:') > -1) {
+	if(msg.content.startsWith(prefixe) || msg.content.indexOf(':poroing:') > -1 || msg.content.indexOf(':ersil:') > -1) {
 		commands.commands(msg, members, mapUser);
 	}
 });
