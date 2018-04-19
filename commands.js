@@ -9,8 +9,7 @@ const imag = require("./command/images");
 const github = require("./command/github");
 const ersil = require("./command/ersil");
 
-classe = require("./command/Classe");
-classe = new classe.Classe();
+classe = require("./command/classe");
 
 exports.commands = function commands(msg, members, mapUser) {
 	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content === '!v') {
