@@ -7,6 +7,7 @@ const alls = require("./command/all");
 const say = require("./command/say");
 const imag = require("./command/images");
 const github = require("./command/github");
+const ersil = require("./command/ersil");
 
 classe = require("./command/Classe");
 classe = new classe.Classe();
@@ -50,7 +51,7 @@ exports.commands = function commands(msg, members, mapUser) {
 		msg.channel.send("", {file: imag.imag()});
 	}
 	if (msg.content.indexOf(':ersil:') > -1) {
-		msg.channel.send("La passion de la pêche");
+		msg.channel.send(ersil.ersil());
 	}
 	if (msg.content === '!v github') {
 		msg.channel.send(github.github());
