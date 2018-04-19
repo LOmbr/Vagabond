@@ -1,0 +1,22 @@
+{
+  "name": "vagabond",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LOmbr/Vagabond.git"
+  },
+  "author": "LOmbr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LOmbr/Vagabond/issues"
+  },
+  "homepage": "https://github.com/LOmbr/Vagabond#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
