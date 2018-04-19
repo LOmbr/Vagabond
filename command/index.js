@@ -29,7 +29,7 @@ function needmore(file, bool) {
 	}
 	else {
 		if(file === 'classe') {
-			return file + ' classe1 [classes2 all]';
+			return file + ' classe1 [classes2 all my]';
 		}
 	}
 }
