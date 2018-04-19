@@ -52,6 +52,7 @@ exports.commands = function commands(msg, members, mapUser) {
 	if (msg.content.indexOf(':ersil:') > -1) {
 		let crab = parseInt(process.env.CRABE, 10);
 		crab++;
+		process.env.CRABE = crab;
 		msg.channel.send(process.env.CRABE + '>>>' + crab);
 	}
 	if (msg.content === '!v github') {
