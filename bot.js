@@ -22,9 +22,9 @@ client.on('message', msg => {
 	if(msg.content.startsWith(prefixe)) {
 		commands.commands(msg, members, mapUser, crabe);
 	}
-	else if(msg.content.indexOf(':ersil:') > -1) {
+	/*else if(msg.content.indexOf(':ersil:') > -1) {
 		crabe = commands.commands(msg, members, mapUser, crabe);
-	}
+	}*/
 		
 });
 
