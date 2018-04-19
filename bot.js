@@ -19,13 +19,9 @@ client.on('ready', () => {
 
 client.on('message', msg => {
 	
-	if(msg.content.startsWith(prefixe)) {
+	if(msg.content.startsWith(prefixe) ||msg.content.indexOf(':ersil:') > -1) {
 		commands.commands(msg, members, mapUser, crabe);
 	}
-	/*else if(msg.content.indexOf(':ersil:') > -1) {
-		crabe = commands.commands(msg, members, mapUser, crabe);
-	}*/
-		
 });
 
 client.login(process.env.TOKEN);
