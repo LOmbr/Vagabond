@@ -1,13 +1,9 @@
 exports.build = function build(args, mapBuilds) {
-	s = '';
 	
-	mapBuilds.forEach(function(element) {
-		s += element + '\n';
-	});
-	
-	return s;
-	
-	
-	//return __dirname+'/images/'+array[getRandomInt(array.length)];
+	s = args[0];
+	if(args > 1) {
+		s += '_' + args[1];
+	}
+	return __dirname+'/build/'+mapBuilds.get(s);
 }
 
