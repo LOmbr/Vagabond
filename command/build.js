@@ -1,6 +1,6 @@
 exports.build = function build(args, mapBuilds) {
 	
-	if(args.length > 0) {
+	if(args.length !== undefined) {
 		s = args[0];
 		if(args.length > 1) {
 			s += '_' + args[1];
