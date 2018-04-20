@@ -12,7 +12,7 @@ const prefixe = '!v';
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setActivity('!v || !v help || !v commands');	
+	client.user.setActivity('!v || !v help || !v commands || :pororing:');	
 	init.gen(client, members, mapUser, mapBuilds);	
 	crabe = 0;
 });
