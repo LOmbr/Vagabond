@@ -50,7 +50,7 @@ exports.commands = function commands(msg, members, mapUser, mapBuilds) {
 	else if (msg.content.startsWith('!v build all')) {
 		s = '';
 		mapBuilds.forEach(function(element) {
-			s += element.replace('.PNG', '') + '\n';
+			s += element.replace('.PNG', '').replace('_', ' ') + '\n';
 		});
 		msg.channel.send(s);
 	}
