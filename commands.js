@@ -57,7 +57,8 @@ exports.commands = function commands(msg, members, mapUser, mapBuilds) {
 	else if (msg.content.startsWith('!v build')) {
 		modif = msg.content.replace('!v build', '');
 		args = modif.split(' ').slice(1);
-		msg.channel.send("Rouge : obligatoire\nVert : utile", {file: build.build(args, mapBuilds)});
+		tmp = build.build(args, mapBuilds);
+		msg.channel.send(tmp[0], {file: tmp[1]});
 	}
 	if (msg.content.indexOf(':ersil:') > -1) {
 		msg.channel.send(ersil.ersil());
