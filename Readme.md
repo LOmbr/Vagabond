@@ -14,6 +14,26 @@ Le préfixe pour utiliser Vagabond est
 affichage de la liste des commandes.
 ```
 
+- commands
+```
+pareil que pour help.
+```
+
+- build classe
+```
+affichage d'indication sur les sorts de la classe.
+```
+
+- build classe specification
+```
+propose une répartition des points de compétence pour la classe selon la spécification.
+```
+
+- build all
+```
+affichage de toute les classes et spécifications disponibles.
+```
+
 - classe [[guerrier] [magicien] [archer] [voleur] [chaman] [amazon]]
 ```
 affichage de l'arbre d'évolution des classes placées en paramètres.
