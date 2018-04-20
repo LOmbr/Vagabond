@@ -21,7 +21,7 @@ pareil que pour help.
 
 - build classe
 ```
-affichage d'indication sur les sorts de la classe.
+affichage d'indication sur l'arbre des sorts de la classe.
 ```
 
 - build classe specification
