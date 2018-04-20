@@ -29,10 +29,10 @@ function needmore(file, bool) {
 	}
 	else {
 		if(file === 'classe') {
-			return file + ' *[classe1 [classes2] | all] *';
+			return file + ' *[classe1 [classes2] | all]*';
 		}
 		if(file === 'build') {
-			return file + ' *[classe [spécification] | all] *';
+			return file + ' *[classe [spécification] | all]*';
 		}
 	}
 }
