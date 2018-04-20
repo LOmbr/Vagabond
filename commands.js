@@ -47,14 +47,14 @@ exports.commands = function commands(msg, members, mapUser, mapBuilds) {
 	else if (msg.content === '!v github') {
 		msg.channel.send(github.github());
 	}
-	else if (msg.content.startsWith('!v build all') {
+	else if (msg.content.startsWith('!v build all')) {
 		s = '';
 		mapBuilds.forEach(function(element) {
 			s += element + '\n';
 		});
 		msg.channel.send(s);
 	}
-	else if (msg.content.startsWith('!v build') {
+	else if (msg.content.startsWith('!v build')) {
 		modif = msg.content.replace('!v build', '');
 		args = modif.split(' ').slice(1);
 		msg.channel.send(build.build(args, mapBuilds));
