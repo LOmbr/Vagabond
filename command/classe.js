@@ -19,6 +19,10 @@ exports.classe = function classe(param, roles) {
 		}
 	});
 	
+	if(s === '') {
+		s = 'LOL';
+	}
+	
 	return s
 }
 
