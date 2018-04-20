@@ -32,7 +32,7 @@ function needmore(file, bool) {
 			return file + ' classe1 [classes2 all my]';
 		}
 		if(file === 'build') {
-			return file + 'classe [spécification]';
+			return file + ' classe [spécification]';
 		}
 	}
 }
