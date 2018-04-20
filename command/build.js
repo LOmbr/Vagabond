@@ -15,6 +15,7 @@ exports.build = function build(args, mapBuilds) {
 		s += '```!v build all ```\n';
 		s += 'ou ```!v build nom_de_la_classe ```\n';
 		s += 'ou ```!v build nom_de_la_classe specifiation```\n';
+		return s;
 	}
 }
 
