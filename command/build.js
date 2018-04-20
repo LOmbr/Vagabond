@@ -4,6 +4,8 @@ exports.build = function build(args, mapBuilds) {
 	if(args > 1) {
 		s += '_' + args[1];
 	}
-	return __dirname+'/build/'+mapBuilds.get(s);
+	s+='.PNG';
+	return s;
+	//return __dirname+'/build/'+mapBuilds.get(s);
 }
 
