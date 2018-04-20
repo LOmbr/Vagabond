@@ -20,7 +20,10 @@ exports.classe = function classe(param, roles) {
 	});
 	
 	if(s === '') {
-		s = 'LOL';
+		s = 'Utilisation : \n';
+		s += '```!v classe all ```\n';
+		s += 'ou ```!v build nom_de_la_classe ```\n';
+		s += 'ou ```!v build nom_de_la_classe nom_de_la_classe ...```\n';
 	}
 	
 	return s
