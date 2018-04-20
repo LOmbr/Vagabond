@@ -1,6 +1,13 @@
 exports.build = function build(args, mapBuilds) {
 	
-	return args;
+	
+	s = '';
+	
+	args.forEach(function(element) {
+		s+= element +'\n';
+	});
+	
+	return s;
 	//if(args !== undefined) {
 		/*s = args[0];
 		if(args.length > 1) {
