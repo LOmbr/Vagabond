@@ -5,7 +5,7 @@ exports.index = function index() {
 	
 	var s = "";
 	for(const file of files) {
-		if (file !== 'index.js' && file !== 'init.js' && file !== 'images' && file !== 'ersil.js') {
+		if (file !== 'index.js' && file !== 'init.js' && file !== 'images' && file !== 'build' && file !== 'ersil.js') {
 			var tmp = file.replace('.js', '');
 			
 			if(needmore(tmp, true)) {
