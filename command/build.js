@@ -24,7 +24,7 @@ exports.build = function build(args, mapBuilds) {
 		
 		
 		ret[0] = s;
-		ret[1] = __dirname+'/build/magicien.PNG'+;
+		ret[1] = __dirname+'/build/magicien.PNG';
 		return ret;
 	}
 }
