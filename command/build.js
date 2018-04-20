@@ -3,7 +3,7 @@ exports.build = function build(args, mapBuilds) {
 
 	ret = new Array();
 	
-	if(args !== undefined) {
+	if(args.length > 0) {
 		s = args[0];
 		if(args.length > 1) {
 			s += '_' + args[1];
