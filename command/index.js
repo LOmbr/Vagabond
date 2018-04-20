@@ -25,11 +25,14 @@ exports.index = function index() {
 
 function needmore(file, bool) {
 	if(bool) {
-		return file === 'classe';
+		return file === 'classe' || file === 'build';
 	}
 	else {
 		if(file === 'classe') {
 			return file + ' classe1 [classes2 all my]';
+		}
+		if(file === 'build') {
+			return file + 'classe [spécification]';
 		}
 	}
 }
