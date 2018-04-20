@@ -10,7 +10,7 @@ const build = require("./command/build");
 
 const ersil = require("./command/ersil");
 
-exports.commands = function commands(msg, members, mapUser) {
+exports.commands = function commands(msg, members, mapUser, mapBuilds) {
 	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content.indexOf(':pororing:') > -1 || msg.content === '!v') {
 		s = 'Listes des commandes :\n'
 		s += index.index();
@@ -50,7 +50,7 @@ exports.commands = function commands(msg, members, mapUser) {
 	else if (msg.content === '!v build') {
 		modif = msg.content.replace('!v build', '');
 		args = modif.split(' ').slice(1);
-		msg.channel.send(build.build(args));
+		msg.channel.send(build.build(args, mapBuilds));
 	}
 	if (msg.content.indexOf(':ersil:') > -1) {
 		msg.channel.send(ersil.ersil());

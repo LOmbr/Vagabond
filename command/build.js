@@ -1,4 +1,4 @@
-exports.build = function build(args) {
+exports.build = function build(args, mapBuilds) {
 	s = '';
 	
 	mapBuilds.forEach(function(element) {

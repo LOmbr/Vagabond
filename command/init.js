@@ -1,6 +1,6 @@
 
 
-exports.gen = function gen(client, members, mapUser) {
+exports.gen = function gen(client, members, mapUser, mapBuilds) {
 	
 	members.forEach(function(element) {
 		if(!element['bot']) {
@@ -11,7 +11,7 @@ exports.gen = function gen(client, members, mapUser) {
 	genClasses(client);
 	genEmojis(client);
 	genClasse(client);
-	genBuilds
+	genBuilds(mapBuilds);
 }
 
 function genClasses(client) {
@@ -178,7 +178,7 @@ function genClasse(client) {
 
 const fs = require('fs');
 const files = fs.readdirSync(__dirname+'/build');
-function genBuilds() {
+function genBuilds(mapBuilds) {
 	for(const file of files) {	
 		mapBuilds.set(file, file);
 	}
