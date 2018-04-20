@@ -11,6 +11,7 @@ exports.gen = function gen(client, members, mapUser) {
 	genClasses(client);
 	genEmojis(client);
 	genClasse(client);
+	genBuilds
 }
 
 function genClasses(client) {
@@ -173,4 +174,12 @@ function genClasse(client) {
 	amazoneA += '-- Valkyrie ' + valkyrieE + '\n';
 	amazoneA += '------ Mirage' + mirageE + '\n';
 	amazoneA += '---------- Furie Drakan ' + furieE + '\n';
+}
+
+const fs = require('fs');
+const files = fs.readdirSync(__dirname+'/build');
+function genBuilds() {
+	for(const file of files) {	
+		mapBuilds.set(file, file);
+	}
 }
