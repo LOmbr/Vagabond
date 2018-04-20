@@ -1,4 +1,4 @@
-exports.imag = function imag(args) {
+exports.build = function build(args) {
 	s = '';
 	
 	mapBuilds.forEach(function(element) {

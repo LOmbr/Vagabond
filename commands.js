@@ -6,8 +6,9 @@ const evolve = require("./command/evolve");
 const say = require("./command/say");
 const imag = require("./command/images");
 const github = require("./command/github");
-const ersil = require("./command/ersil");
+const build = require("./command/build");
 
+const ersil = require("./command/ersil");
 
 exports.commands = function commands(msg, members, mapUser) {
 	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content.indexOf(':pororing:') > -1 || msg.content === '!v') {
@@ -26,17 +27,17 @@ exports.commands = function commands(msg, members, mapUser) {
 		args = modif.split(' ').slice(1);
 		msg.channel.send(classe.classe(args, msg.member.roles));
 	}
-	else if (msg.content === '!v emojis') {
+	/*else if (msg.content === '!v emojis') {
 		msg.channel.send(emojis.emojis(msg));
-	}
+	}*/
 	else if (msg.content === '!v evolve') {
 		msg.channel.send(evolve.evolve());
 	}
-	else if (msg.content.startsWith('!v all')) {
+	/*else if (msg.content.startsWith('!v all')) {
 		modif = msg.content.replace('!v all', '');
 		args = modif.split(' ').slice(1);
 		msg.channel.send(alls.alls(mapUser, args));
-	}
+	}*/
 	else if (msg.content === '!v say') {
 		msg.channel.send(say.say());
 	}
@@ -45,6 +46,11 @@ exports.commands = function commands(msg, members, mapUser) {
 	}
 	else if (msg.content === '!v github') {
 		msg.channel.send(github.github());
+	}
+	else if (msg.content === '!v build') {
+		modif = msg.content.replace('!v build', '');
+		args = modif.split(' ').slice(1);
+		msg.channel.send(build.build(args));
 	}
 	if (msg.content.indexOf(':ersil:') > -1) {
 		msg.channel.send(ersil.ersil());
