@@ -65,7 +65,10 @@ exports.commands = function commands(msg, members, mapUser, mapBuilds) {
 		args = modif.split(' ').slice(1);
 		tmp = args[0].replace('<', '').replace('>', '').replace('@', '');
 		//msg.channel.send('', {file: wanted.wanted(args)});
-		console.log(tmp);
+		
+		client.fetchUser(tmp).then(myUser => {
+			console.log(myUser.avatarURL); // My user's avatar is here!
+		});
 	}
 	if (msg.content.indexOf(':ersil:') > -1) {
 		msg.channel.send(ersil.ersil());
