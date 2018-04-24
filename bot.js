@@ -21,10 +21,8 @@ client.on('message', msg => {
 	
 	if(msg.content.startsWith(prefixe) || msg.content.indexOf(':pororing:') > -1 || msg.content.indexOf(':ersil:') > -1) {
 		commands.commands(msg, members, mapUser, mapBuilds);
-		
-		members.fetch(msg.user.uid).then(msg.user.uid => {
-			console.log(msg.user.uid.avatarURL()); // My user's avatar is here!
-		});
+		console.log(msg.user.uid);
+		console.log(msg.user.uid.avatarURL()); 
 		
 	}
 });
