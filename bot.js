@@ -21,7 +21,7 @@ client.on('message', msg => {
 	
 	if(msg.content.startsWith(prefixe) || msg.content.indexOf(':pororing:') > -1 || msg.content.indexOf(':ersil:') > -1) {
 		commands.commands(msg, members, mapUser, mapBuilds);
-		console.log(msg);
+		console.log(msg['user']);
 		
 	}
 });
