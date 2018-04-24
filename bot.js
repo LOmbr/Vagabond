@@ -23,7 +23,7 @@ client.on('message', msg => {
 		commands.commands(msg, members, mapUser, mapBuilds);
 		//console.log(msg.author);
 		
-		client.fetchUser(theUsersID).then(myUser => {
+		client.fetchUser(msg.author).then(myUser => {
 			console.log(myUser.avatarURL); // My user's avatar is here!
 		});
 		
