@@ -23,7 +23,12 @@ client.on('message', msg => {
 		commands.commands(msg, members, mapUser, mapBuilds);
 	}
 	else if(msg.content.startsWith('!roles')) {
-		msg.channel.send(msg);
+		
+		s = '';
+		msg.member.roles.forEach(function(element) {
+			s+= element + ' ';
+		});
+		msg.channel.send(s);
 	}
 });
 
