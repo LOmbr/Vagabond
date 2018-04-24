@@ -7,6 +7,7 @@ const say = require("./command/say");
 const imag = require("./command/images");
 const github = require("./command/github");
 const build = require("./command/build");
+const wanted = require("./command/wanted");
 
 const ersil = require("./command/ersil");
 
@@ -65,8 +66,6 @@ exports.commands = function commands(msg, members, mapUser, mapBuilds, client) {
 		args = modif.split(' ').slice(1);
 		tmp = args[0].replace('<', '').replace('>', '').replace('@', '');
 		msg.channel.send('', {file: wanted.wanted(tmp, client)});
-		
-
 	}
 	if (msg.content.indexOf(':ersil:') > -1) {
 		msg.channel.send(ersil.ersil());
