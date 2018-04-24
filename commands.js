@@ -10,7 +10,7 @@ const build = require("./command/build");
 
 const ersil = require("./command/ersil");
 
-exports.commands = function commands(msg, members, mapUser, mapBuilds) {
+exports.commands = function commands(msg, members, mapUser, mapBuilds, client) {
 	if (msg.content === '!v help' || msg.content === '!v commands' || msg.content.indexOf(':pororing:') > -1 || msg.content === '!v') {
 		s = 'Listes des commandes :\n'
 		s += index.index();

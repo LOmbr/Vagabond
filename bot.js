@@ -20,7 +20,7 @@ client.on('ready', () => {
 client.on('message', msg => {
 	
 	if(msg.content.startsWith(prefixe) || msg.content.indexOf(':pororing:') > -1 || msg.content.indexOf(':ersil:') > -1) {
-		commands.commands(msg, members, mapUser, mapBuilds);
+		commands.commands(msg, members, mapUser, mapBuilds, client);
 		
 		//console.log(msg.author);
 		/*client.fetchUser(msg.author).then(myUser => {
