@@ -63,8 +63,9 @@ exports.commands = function commands(msg, members, mapUser, mapBuilds) {
 	else if (msg.content.startsWith('!v wanted')) {
 		modif = msg.content.replace('!v wanted', '');
 		args = modif.split(' ').slice(1);
+		tmp = args[0].replace('<', '').replace('>', '').replace('@', '');
 		//msg.channel.send('', {file: wanted.wanted(args)});
-		console.log(args[0]);
+		console.log(tmp);
 	}
 	if (msg.content.indexOf(':ersil:') > -1) {
 		msg.channel.send(ersil.ersil());
