@@ -60,6 +60,11 @@ exports.commands = function commands(msg, members, mapUser, mapBuilds) {
 		tmp = build.build(args, mapBuilds);
 		msg.channel.send(tmp[0], {file: tmp[1]});
 	}
+	/*else if (msg.content.startsWith('!v wanted')) {
+		modif = msg.content.replace('!v wanted', '');
+		args = modif.split(' ').slice(1);
+		msg.channel.send('', {file: wanted.wanted(args)});
+	}*/
 	if (msg.content.indexOf(':ersil:') > -1) {
 		msg.channel.send(ersil.ersil());
 	}
