@@ -25,10 +25,12 @@ client.on('message', msg => {
 	else if(msg.content.startsWith('!roles')) {
 		
 		s = '';
+		w = '';
 		msg.member.roles.forEach(function(element) {
 			s+= element + ' ';
+			w+= element.replace(/@/g, '');
 		});
-		msg.channel.send(s);
+		msg.channel.send(s + '\n' + w);
 	}
 });
 
