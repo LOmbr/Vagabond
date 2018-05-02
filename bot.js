@@ -28,7 +28,7 @@ client.on('message', msg => {
 		w = '';
  		msg.member.roles.forEach(function(element) {	
  			s+= element + ' ';
-			w+= element.toString.replace(/@/g, '');
+			w+= element.toString().replace('@', '');
  		});	 
 		msg.channel.send(s + '\n' + w);
  	}	 	
