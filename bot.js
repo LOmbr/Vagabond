@@ -22,7 +22,7 @@ client.on('message', msg => {
 	if(msg.content.startsWith(prefixe) || msg.content.indexOf(':pororing:') > -1 || msg.content.indexOf(':ersil:') > -1) {
 		commands.commands(msg, members, mapUser, mapBuilds, client);
 	}
-	/*else if(msg.content.startsWith('!roles')) {
+	else if(msg.content.startsWith('!roles')) {
  			 		
  		s = '';
 		w = '';
@@ -31,7 +31,7 @@ client.on('message', msg => {
 			w+= element.toString().replace('@', '');
  		});	 
 		msg.channel.send(s + '\n' + w);
- 	}	 	*/
+ 	}	 	
 });
 
 client.login(process.env.TOKEN);
